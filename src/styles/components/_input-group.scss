@@ -8,9 +8,24 @@
   }
 }
 
+.filter-label {
+  text-align: center;
+  padding-right: 15px;
+  white-space: nowrap;
+}
+
+.filter-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .input-group__item {
   margin-bottom: $s-size;
   @media (min-width: $desktop-breakpoint) {
     margin: 0 $s-size 0 0;
   }
+}
+
+.select {
+  color: forestgreen;
 }

@@ -17,6 +17,8 @@ export const startAddExpense = (expenseData = {}) => {
       createdAt = 0
     } = expenseData;
     const expense = { description, note, amount, createdAt };
+    console.log("expensesss", expense);
+    console.log("uids", uid);
 
     return database.ref(`users/${uid}/expenses`).push(expense).then((ref) => {
       dispatch(addExpense({
